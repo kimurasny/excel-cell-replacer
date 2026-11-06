@@ -1,0 +1,12 @@
+# 開発用ツール（pytest / ruff）の設定。ツール本体は excel_replace.py 単体で動作する。
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.ruff]
+target-version = "py39"
+line-length = 120
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B"]
